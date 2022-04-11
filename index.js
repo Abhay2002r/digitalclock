@@ -5,20 +5,12 @@ setInterval(() => {
     a= new Date(); 
     if(a.getHours()<10){
         h= "0"+a.getHours();
-    }
-    else{
-    h = a.getHours();
-    }
-    if(a.getMinutes()<10){
         m= "0"+a.getMinutes();
-    }
-    else{
-    m = a.getMinutes();
-    }
-    if(a.getSeconds()<10){
         s= "0"+a.getSeconds();
     }
     else{
+    h = a.getHours();
+    m = a.getMinutes();
     s = a.getSeconds();
     }
     d = "Today's Date : "+a.getDate()+" / "+(a.getMonth()+1)+" / "+a.getFullYear();
